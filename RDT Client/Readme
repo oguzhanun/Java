@@ -1,0 +1,14 @@
+In this programming assignment, you will program a client which communicates with a server
+reliably. Your client program will use UDP at the transport layer and ensure reliability at the application
+layer. Your client must be a console application (no graphical user interface, GUI, is required) and should
+be named as RDTClient (i.e., the name of the class that includes the main method should be RDTClient).
+The server code will be provided with the assignment.
+Reliable Communication
+Your client program will send data to and receive data from the provided server. Since you will
+most probably test your client code on a single machine, i.e., your own, the server we provide will
+simulate loss through the random dropping of messages. The server will drop the following message
+with some probability:
+• Your client’s outgoing data message
+• Your client’s outgoing acknowledgment message
+• The server’s outgoing data message
+• The server’s outgoing acknowledgment message
